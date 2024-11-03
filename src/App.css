@@ -1,38 +1,37 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
-  text-align: center;
+  min-height: 100vh;
+  transition: all 0.3s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dark-mode .header {
+  background-color: rgba(26, 26, 26, 0.95);
 }
 
-.App-header {
-  background-color: #282c34;
+.dark-mode .header nav ul li a {
+  color: #ffffff;
+}
+
+.dark-mode .profile-section {
+  background: linear-gradient(135deg, #2d3436 0%, #000000 100%);
+}
+
+.dark-mode .profile-text h1,
+.dark-mode .profile-text h2,
+.dark-mode .profile-text p {
+  color: #ffffff;
+}
+
+.App {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
